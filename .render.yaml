@@ -1,1 +1,7 @@
-
+services:
+  - type: web
+    name: techpulse-backend
+    runtime: node
+    rootDir: techpulse/backend
+    buildCommand: npm install
+    startCommand: npm start
