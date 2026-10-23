@@ -1159,7 +1159,8 @@ app.delete(
   })
 );
 
-// IMPORTANT:
-// Vercel handles the server.
-// Do NOT use app.listen() here.
-export default app;
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`TechPulse backend running on port ${PORT}`);
+});
